@@ -30,7 +30,6 @@ background-color: hsl(30, 38%, 92%);
      background-color: white;
      border-top-right-radius: 18px;
      border-bottom-right-radius: 18px;
-     border: 3px solid black;
 }
 
 picture img {
@@ -42,23 +41,20 @@ picture img {
 /******************************************
 /* LAYOUT
 /*******************************************/
-body{
-     border: 3px solid black;
-    
-}
+
 
 .main {
-   border: 3px solid black;
    display: flex;
    justify-content: center;
-   padding-top: 9%;
+   padding-top: 12%;
    
 
    }
 
    picture,.calltoAction{
-     border: 3px solid red;
      max-width: 18%;
+     min-width: 300px;
+
      }
    
 
@@ -69,9 +65,7 @@ body{
 
    }
    
-   .calltoAction {
-    
-   }
+  
    
 
 .attribution 
@@ -94,23 +88,24 @@ body{
 
   span, p { 
      color: hsl(212, 21%, 14%, 50%);
-     font-size: .8rem;
+     font-size: 1rem;
      font-family: Montserrat;
+     margin-top: -3%;
 }
 
 h1{
-     margin-top: -10px;
-     font-size: 1rem;
+     margin-top: 5%;
+     font-size: 2.3rem;
      font-family: Fraunces;
 
 }
 
 p { 
-     font-weight: 700;
+     font-weight: 500;
      word-spacing: 3px;
      line-height: 1.6;
-     font-size: 1rem;
-     ;
+     font-size: 14px;
+
 }
 
 
@@ -119,14 +114,14 @@ p {
      flex-direction: row;
 }
 h3{
-     font-size: 1em;
+     font-size: 2em;
      font-family: Fraunces;
      color: hsl(158, 36%, 37%);
 }
 
 h4{ 
      margin-left: 8%;
-     margin-top: 10px;
+     margin-top: 2%;
      font-family: Montserrat;
      text-decoration: line-through;
      color: hsl(212, 21%, 14%, 60%);
@@ -155,6 +150,117 @@ h2 a {
           width: 20px;
 } 
 
-@media (max-width: 500px){
+/* MEDIA QUERIES */
+
+@media (max-width: 600px){
      
+/******************************************
+/* LAYOUT
+/*******************************************/
+.main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 5%;
+     padding-left: 3%;
+     padding-right: 3%;
+}  
+
+picture,.calltoAction{
+     max-width: 180%;
+     min-width: 0%;
+
+     }
+     .calltoAction{
+     height: 533px;
+     margin-top: -1%;
+     }
+
+
+     .calltoAction{
+          background-color: white;
+          border-bottom-right-radius: 18px;
+          border-bottom-left-radius: 18px;
+          border-top-right-radius: 0px;
+     }
+     
+     picture img {
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          border-bottom-left-radius: 0px;
+
+     }
+     
+
+     
+     
+     span, p { 
+          margin-top: -10%;
+     }
+
+
+     h1{
+          margin-top: -15%;
+          font-size: 2rem;
+          font-family: Fraunces;
+     
+     }
+
+
+     p { 
+          font-weight: 700;
+          word-spacing: 3px;
+          line-height: 1.6;
+          font-size: 16px;
+     
+     }
+
+
+
+
+h2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: hsl(158, 36%, 37%);
+     border-radius: 10px;
+     justify-content: center;
+     height: 12%;
+}
+
+h2 a {
+   
+     text-decoration: none;
+     font-size: 1rem;
+     color: white;
+     padding-left: 4%;
+     font-family: Montserrat;
+}    
+
+.calltoAction{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 40px 27px 0px 27px;
+     
+} 
+
+h3{
+     font-size: 2.5em;
+     font-family: Fraunces;
+     color: hsl(158, 36%, 37%);
+     margin-bottom: -20%;
+}
+
+h4{ 
+     margin-left: 8%;
+     margin-top: 4%;
+     font-family: Montserrat;
+     text-decoration: line-through;
+     color: hsl(212, 21%, 14%, 60%);
+     margin-bottom: -20%;
+
+}
+
 }
